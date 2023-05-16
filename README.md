@@ -2,7 +2,7 @@
 
 Este repositorio es un trabajo universitario para aprender como desarrollar un proyecto con Node, PUG y Express utilizando la API de mapas de [Leaflet](https://leafletjs.com/).
 
-### Installation
+### Installación
 
 Para instalar las dependencias del proyecto:
 ```bash
