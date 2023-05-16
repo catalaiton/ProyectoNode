@@ -6,8 +6,8 @@ var Bicicleta = function(id, color, modelo, ubicacion)
     this.ubicacion=ubicacion;
 }
 
-Bicicleta.prototype.toSttring= function(){
-    return 'id: '+this.id+' | colorr: '+tthis.color;
+Bicicleta.prototype.toString= function(){
+    return 'id: '+this.id+' | color: '+this.color;
 
 }
 
@@ -36,8 +36,8 @@ Bicicleta.removeById= function(aBiciId){//eliminar bicicleta
 }
 
 
-var a = new Bicicleta(1, 'rojo','urbana',[4.6281149,-74.0680332]);
-var b = new Bicicleta(2, 'blanca','urbana',[4.5794549,-74.160091]);
+var a = new Bicicleta(1, 'rojo','urbana','[4.6281149,-74.0680332]');
+var b = new Bicicleta(2, 'blanca','urbana','[4.5794549,-74.160091]');
 Bicicleta.add(a);
 Bicicleta.add(b);
 
