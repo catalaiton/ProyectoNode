@@ -31,3 +31,20 @@ describe('Bicicleta.findById', ()=> {
         expect(targetBici.modelo).toBe(aBici.modelo);
     });
 });
+
+/*
+    TODO: Revisar el test de removeById 
+*/
+describe('Bicicleta.removeById', ()=> { 
+    it('Debe remover la bici con id 1', ()=> {
+        expect(Bicicleta.allBicis.length).toBe(0);
+        var aBici = new Bicicleta(1, 'Bici_temp','Urbana');
+        Bicicleta.add(aBici);
+        
+        var targetBici = Bicicleta.findById(1);
+        expect(targetBici.id).toBe(1);
+
+        Bicicleta.removeById(1);
+        expect(targetBici.id).toBe(1);
+    });
+});
